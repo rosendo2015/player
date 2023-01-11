@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  
+}
+main > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+#app {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+.player1, .player2, .player3{
+  box-shadow: 10px 0 20px 6px #000;
+
+}
+.player1 {
+  margin: 0 auto;
+  width: 267px;
+  height: 498px;
+  padding: 38px;
+  background-color: #242141;
+  border-radius: 6px;
+}
+.player1 > img:first-child {
+  width: 190px;
+  height: 190px;
+}
+.title {
+  margin: 29px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+h1 {
+  font-weight: 700;
+  font-size: 24.0074px;
+  line-height: 100%;
+  color: #e1e1e6;
+}
+span {
+  font-weight: 400;
+  font-size: 19.2059px;
+  line-height: 100%;
+  color: hsla(240, 9%, 89%, 0.67);
+}
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28.8px;
+}
+.controls img{
+    cursor: pointer;
+
+}
+.timer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 14.4045px;
+  line-height: 160%;
+  color: #c4c4cc;
+}
+.player2 {
+  margin: 0 auto;
+  width: 267px;
+  height: 270px;
+  padding: 10px;
+  background-color: #242141;
+  border-radius: 6px;
+}
+.wrapper {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.wrapper h1 {
+  font-size: 20px;
+}
+.wrapper span {
+  font-size: 15px;
+}
+.wrapper img:nth-child(1) {
+  width: 84px;
+  height: 84px;
+}
+.controls {
+  margin-top: 28px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.player2 > img {
+  width: 100%;
+}
+
+.player3 {
+  margin: 0 auto;
+  width: 267px;
+  height: 200px;
+  padding: 10px;
+  background-color: #242141;
+  border-radius: 6px;
+}
+
+@media (min-width: 750px) {
+  #app {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 100px 0;
+  }
+  main {
+    flex-direction: row;
+  }
+  main > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .player2,
+  .player3 {
+    width: 357.71px;
+    padding: 29px;
+  }
+  .player2 h1,
+  .player3 h1 {
+    font-weight: 700;
+    font-size: 24.0074px;
+    line-height: 100%;
+  }
+  .player2 .wrapper,
+  .player3 .wrapper{
+    gap: 28.81px;
+  }
+  .player2 .controls,
+  .player3 .controls{
+    margin-top: 18px;
+  }
+  .player2 .span,
+  .player3 .span{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+  }
+
+
+ 
+}
